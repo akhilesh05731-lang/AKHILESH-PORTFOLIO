@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Akhilesh Kumar | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        /* Navigation */
+        nav {
+            width: 100%;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111827;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        /* Home */
+        #home {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 20px 50px;
+        }
+
+        .home-content h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .home-content h1 span {
+            color: #38bdf8;
+        }
+
+        .home-content h3 {
+            font-size: 25px;
+            color: #cbd5e1;
+            margin-bottom: 10px;
+        }
+
+        .home-content p {
+            color: #94a3b8;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        /* Common Sections */
+        section {
+            padding: 90px 8%;
+            min-height: 70vh;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+            color: #38bdf8;
+        }
+
+        /* About */
+        .about-box {
+            max-width: 800px;
+            margin: auto;
+            background: #1e293b;
+            padding: 35px;
+            border-radius: 15px;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .about-box p {
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .skill-card {
+            background: #1e293b;
+            padding: 35px 70px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .skill-card h3 {
+            color: #38bdf8;
+            font-size: 25px;
+        }
+
+        .skill-card p {
+            margin-top: 10px;
+            color: #cbd5e1;
+        }
+
+        /* Projects */
+        .project-box {
+            max-width: 600px;
+            margin: auto;
+            background: #1e293b;
+            padding: 40px;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .project-box h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .project-box p {
+            color: #cbd5e1;
+        }
+
+        /* Contact */
+        .contact-box {
+            max-width: 650px;
+            margin: auto;
+            background: #1e293b;
+            padding: 35px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .contact-box p {
+            margin: 15px 0;
+            font-size: 18px;
+            color: #cbd5e1;
+        }
+
+        .contact-box a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111827;
+            color: #94a3b8;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            nav {
+                padding: 15px 5%;
+            }
+
+            nav h2 {
+                font-size: 20px;
+            }
+
+            nav ul {
+                gap: 10px;
+            }
+
+            nav ul li a {
+                font-size: 13px;
+            }
+
+            .home-content h1 {
+                font-size: 40px;
+            }
+
+            .home-content h3 {
+                font-size: 20px;
+            }
+
+            section {
+                padding: 80px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Akhilesh</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Home -->
+    <section id="home">
+        <div class="home-content">
+
+            <h1>Hi, I'm <span>Akhilesh Kumar</span></h1>
+
+            <h3>BA Student & Fresher</h3>
+
+            <p>📍 Patna, Bihar</p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2 class="title">About Me</h2>
+
+        <div class="about-box">
+
+            <p>
+                I am a BA student studying at B.D. College, Patna.
+                I am a fresher and interested in learning new skills
+                and building my career.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2 class="title">My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+
+                <h3>Fresher</h3>
+
+                <p>Currently learning and improving my skills.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2 class="title">Projects</h2>
+
+        <div class="project-box">
+
+            <h3>No Projects Yet</h3>
+
+            <p>
+                I am currently learning and will add my projects here soon.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2 class="title">Contact Me</h2>
+
+        <div class="contact-box">
+
+            <p>
+                📧 Email:
+                <a href="mailto:akhilesh05731@gmail.com">
+                    akhilesh05731@gmail.com
+                </a>
+            </p>
+
+            <p>
+                📱 Phone:
+                <a href="tel:7623056862">
+                    7623056862
+                </a>
+            </p>
+
+            <p>📍 Patna, Bihar</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 Akhilesh Kumar. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+</html>
